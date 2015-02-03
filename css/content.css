@@ -1,0 +1,7 @@
+span.diff{
+    margin-left: 10px;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.84);
+    border-radius: 5px 5px 5px 4px;
+    background-color: aquamarine;
+    cursor: alias;
+}
