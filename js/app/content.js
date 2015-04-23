@@ -1,7 +1,4 @@
-console.log('inside content.js');
-
 function addDiffTool(){
-    console.log("Reading Commits");
     clean();
     var commits = jQuery("td.changeset:not(:has(span.merge-lozenge))");
     jQuery.each(commits,function(i,commit){
@@ -29,7 +26,6 @@ function cleanDiff(){
 }
 
 function loadDiff(elem){
-    console.log("Loading Diff");
     return jQuery(elem).data('link');
 }
 
@@ -43,9 +39,26 @@ function renderDiff(diff_page){
         $(this.contentDocument).find('nav').remove();
         $(this.contentDocument).find('div.aui-sidebar').hide();
         $(this.contentDocument).find('.aui-page-panel').css('padding-left','0px');
+        this.contentDocument.body.addEventListener('keyup', function(e){
+            if(e.keyCode === 27 /* Esc key */){ cleanDiff(); }
+            return true;
+        }, false);
     });
 
     jQuery('#overlay').click(function(){
        cleanDiff();
     });
 }
+
+jQuery(document).ready(function() {
+    document.body.addEventListener('keydown', function(e){
+        if(e.keyCode === 18 /* Alt (option) key */){ addDiffTool(); }
+        return true;
+    }, false);
+    document.body.addEventListener('keyup', function(e){
+        if(e.keyCode === 18 /* Alt (option) key */){ clean(); }
+        else if(e.keyCode === 27 /* Esc key */){ cleanDiff(); }
+        return true;
+    }, false);
+});
+
