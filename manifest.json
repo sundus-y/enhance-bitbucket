@@ -1,8 +1,8 @@
 {
-    "name": "Stash Pull Request Diff",
+    "name": "Stash++",
     "version": "1.0.0",
     "manifest_version": 2,
-    "description": "A Chrome extension to make diff easier for pull requests made on stash",
+    "description": "A Chrome extension to make stash better",
     "page_action": {
         "default_icon":"img/diff-icon.png",
         "default_title":"Stash Pull Request Diff"
