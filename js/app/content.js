@@ -33,7 +33,7 @@ function highlight() {
         }).done(function (data) {
             var in_review = false;
             jQuery.each(data.values, function(i,activity){
-               if (activity.action == "COMMENTED" && activity.comment.text == "IN REVIEW") {
+               if (activity.action == "COMMENTED" && (activity.comment.text == "IN REVIEW" || activity.comment.text == "IN_REVIEW")) {
                    in_review = true;
                }
             });
