@@ -32,9 +32,10 @@ function highlight() {
             url: activity_url
         }).done(function (data) {
             var in_review = false;
-            jQuery.each(data.values, function(i,activity){
+            jQuery.each(data.values.reverse(), function(i,activity){
                if (activity.action == "COMMENTED" && (activity.comment.text == "IN REVIEW" || activity.comment.text == "IN_REVIEW")) {
                    in_review = true;
+                   return;
                }
             });
             if (in_review){
