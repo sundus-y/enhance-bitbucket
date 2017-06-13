@@ -1,8 +1,8 @@
 function addDiffTool(){
     clean();
-    var commits = jQuery("td.changeset:not(:has(span.merge-lozenge))");
+    var commits = jQuery("td.commit");
     jQuery.each(commits,function(i,commit){
-        var link = jQuery(commit).find('a.changesetid').attr('href')
+        var link = jQuery(commit).find('a.commitid').attr('href')
         link = window.location.origin + link
         jQuery(commit).append("<span class='diff' data-link='"+link+"'>DIFF</span>");
     });
