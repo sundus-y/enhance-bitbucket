@@ -39,3 +39,15 @@ span.in_review{
     background-color: rgba(25, 26, 36, 0.75);
     z-index: 101 !important;
 }
+
+.merge_conflict_header {
+    width: 1%;
+}
+
+.pivotal_tracker_labels_header {
+    width: 10%
+}
+
+.pivotal_tracker_state_header {
+    width: 6%
+}
