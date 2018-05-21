@@ -1,11 +1,12 @@
 {
-    "name": "Stash++",
-    "version": "2.3.0",
+    "name": "Enhance Bitbucket",
+    "short_name": "Enhance Bitucket",
+    "version": "3.0.0",
     "manifest_version": 2,
-    "description": "A Chrome extension to make stash better",
+    "description": "A Chrome extension to make Bitbucket/Stash better.",
     "page_action": {
         "default_icon":"img/diff-icon.png",
-        "default_title":"Stash Enhancements"
+        "default_title":"Bitbucket/Stash Enhancements"
     },
     "content_scripts": [{
         "js": ["js/lib/jquery-2.1.1.min.js",
