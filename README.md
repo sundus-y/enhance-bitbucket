@@ -1,7 +1,6 @@
 # Enhance Bitbucket
-## A Chrome extension to make Bitbucket/Stash better.
-
-Use this extension to make your life simpler while using Bitbucket/Stash
+#### A Chrome extension to make Bitbucket/Stash better.
+#### Use this extension to make your life simpler while using Bitbucket/Stash
 
 
 ### Feature 1: Simplify diffs on pull requests.
@@ -18,7 +17,7 @@ Use this extension to make your life simpler while using Bitbucket/Stash
 2) There will be an additional column called Merge Conflicts.
 3) Pull requests with merge conflicts will show a caution mark in the new column.
 
-### Feature 4: Integration with Pivotal Tracker
+### Feature 3: Integration with Pivotal Tracker
 **(Note: This requires that the user has already logged in to PivotalTracker.)**
 1) Open the pull request list page.
 2) There will be two additional columns called "PivotalTracker Label" and "Pivotal Tracker State"
