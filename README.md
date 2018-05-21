@@ -1,6 +1,5 @@
 # Enhance Bitbucket
-#### A Chrome extension to make Bitbucket/Stash better.
-#### Use this extension to make your life simpler while using Bitbucket/Stash
+##### A Chrome extension to make Bitbucket/Stash better. Use this extension to make your life simpler while using Bitbucket/Stash
 
 
 ### Feature 1: Simplify diffs on pull requests.
